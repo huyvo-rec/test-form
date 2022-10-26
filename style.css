@@ -147,10 +147,7 @@ html {
 }
 
 
-.wrapper__form {
-    margin-top: 100px;
 
-}
 
 .wrapper__welcome {
     /* height: 200px; */
@@ -168,18 +165,23 @@ html {
     color: grey;
 }
 
-.input-form {
+.wrapper__form--item {
+    margin-top: 100px;
+    display: grid;
+    gap: 25px;
+
+}
+
+
+.wrapper__form--item--input {
     height: 40px;
     width: 100%;
     position: relative;
 }
 
-.wrapper__form>.input-form:not(:first-child) {
-    margin-top: 20px;
 
-}
 
-.wrapper__form .input-form input {
+.wrapper__form--item .wrapper__form--item--input input {
     height: 100%;
     width: 100%;
     border: none;
@@ -191,20 +193,20 @@ html {
     box-sizing: border-box;
 }
 
-.input-form input:focus~label,
-.input-form input:valid~label {
+.wrapper__form--item--input input:focus~label,
+.wrapper__form--item--input input:valid~label {
     transform: translate(-10px, -20px);
     font-size: 15px;
     background-color: white;
     padding: 0 10px;
 }
 
-.input-form input:focus,
-.input-form input:valid {
+.wrapper__form--item--input input:focus,
+.wrapper__form--item--input input:valid {
     border: 2px solid #E8638E;
 }
 
-.wrapper__form .input-form label {
+.wrapper__form--item .wrapper__form--item--input label {
     position: absolute;
     bottom: 12px;
     left: 20px;
@@ -213,14 +215,14 @@ html {
     transition: all 0.3s ease;
 }
 
-.forgot--password {
+.wrapper__form--forgot {
     margin-top: 5px;
     text-align: end;
     font-weight: 600;
     cursor: pointer;
 }
 
-.button-gradients {
+.wrapper__form--button--gradients {
     margin-top: 30px;
     width: 100%;
     height: 40px;
@@ -231,7 +233,7 @@ html {
     background: linear-gradient(to right, #E8638E 0%, #EF9A92 40%);
 }
 
-.button-fb {
+.wrapper__form--button--facebook {
     display: flex;
     gap: 10px;
     justify-content: center;
