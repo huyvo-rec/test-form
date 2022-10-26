@@ -165,7 +165,7 @@ html {
     color: grey;
 }
 
-.wrapper__form--item {
+.form__item {
     margin-top: 100px;
     display: grid;
     gap: 25px;
@@ -173,7 +173,7 @@ html {
 }
 
 
-.wrapper__form--item--input {
+.form__item--input {
     height: 40px;
     width: 100%;
     position: relative;
@@ -181,7 +181,7 @@ html {
 
 
 
-.wrapper__form--item .wrapper__form--item--input input {
+.form__item .form__item--input input {
     height: 100%;
     width: 100%;
     border: none;
@@ -193,20 +193,20 @@ html {
     box-sizing: border-box;
 }
 
-.wrapper__form--item--input input:focus~label,
-.wrapper__form--item--input input:valid~label {
+.form__item--input input:focus~label,
+.form__item--input input:valid~label {
     transform: translate(-10px, -20px);
     font-size: 15px;
     background-color: white;
     padding: 0 10px;
 }
 
-.wrapper__form--item--input input:focus,
-.wrapper__form--item--input input:valid {
+.form__item--input input:focus,
+.form__item--input input:valid {
     border: 2px solid #E8638E;
 }
 
-.wrapper__form--item .wrapper__form--item--input label {
+.form__item .form__item--input label {
     position: absolute;
     bottom: 12px;
     left: 20px;
@@ -215,14 +215,14 @@ html {
     transition: all 0.3s ease;
 }
 
-.wrapper__form--forgot {
+.form__forgot-password {
     margin-top: 5px;
     text-align: end;
     font-weight: 600;
     cursor: pointer;
 }
 
-.wrapper__form--button--gradients {
+.form__button--gradients {
     margin-top: 30px;
     width: 100%;
     height: 40px;
@@ -233,7 +233,7 @@ html {
     background: linear-gradient(to right, #E8638E 0%, #EF9A92 40%);
 }
 
-.wrapper__form--button--facebook {
+.form__button--facebook {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -252,7 +252,7 @@ html {
     font-weight: 600;
 }
 
-.button-fb img {
+.form__button--facebook img {
     width: 24px;
     height: 24px;
 }
